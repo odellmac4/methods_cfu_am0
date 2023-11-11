@@ -8,31 +8,30 @@
 # The return value is "hello world"
 "Hello World".downcase
 
-
+# 'The include? method is called on the string object "Hello World"'
+# 'An argument is passed as the method is asking if the string "Hello World" includes the string "Hello"'
+# 'The return value is true'
 "Hello World".include?("Hello")
-puts 'The include method is called on the string object "Hello World"'
-puts 'An argument is passed as the method is asking if the string "Hello World" includes the string "Hello"'
-puts 'The return value is true'
 
+# 'The end_with? method is called on the string object "Hello World"'
+# 'An arugument is passed as the method is asking if the string "Hello World" ends with "Hello"'
+# 'The return value is false'
 "Hello World".end_with?("Hello")
-puts 'The end with method is called on the string object "Hello World"'
-puts 'An arugument is passed as the method is asking if the string "Hello World" ends with "Hello"'
-puts 'The return value is false'
 
+# 'The end_with? method is called on the string object "Hello World"'
+# 'An argument is passed as the method is asking if the string "Hello World" ends with "rld"'
+# 'The return value is true'
 "Hello World".end_with?("rld")
-puts 'The end with method is called on the string object "Hello World"'
-puts 'An argument is passed as the method is asking if the string "Hello World" ends with "rld"'
-puts 'The return value is true'
 
+# 'The even method is called on the integer 12'
+# 'An argument is passed as the method is asking if the integer is an even number'
+# 'The return value is true'
 12.even?
-puts 'The even method is called on the integer 12'
-puts 'An argument is passed as the method is asking if the integer is an even number'
-puts 'The return value is true'
 
+# 'The next method is called on the integer 18'
+# 'No argument is passed; this function returns the next integer that succeeds an integer value'
+# 'The return value is 19'
 18.next
-puts 'The next method is called on the integer 18'
-puts 'No argument is passed; this function returns the next integer that succeeds an integer value'
-puts 'The return value is 19'
 
 
 # SECTION 2: Calling methods on variables assigned to strings.
@@ -46,10 +45,23 @@ puts 'The return value is 19'
 # The start_with? method returns true if the data in the first_name variable starts with the argument passed in.
 # In this example, the return value is true, because "Jeff" does start with "J".
 # The puts command prints the return value of the start_with? method (true) to the console.
-first_name = "Jeff"
-puts first_name.start_with?("J")
+# first_name = "Jeff"
+# puts first_name.start_with?("J")
 
+female_vocalist = "Brandy"
+male_vocalist = "Boyz 2 Men"
 
+# The end_with? method is called on the female_vocalist variable, which stores the string object "Brandy".
+# The end_with? method returns true if the data in the female_vocalist variable ends with the argument passed in.
+# In this example, the return value is true because "Brandy" does end with "andy".
+# The puts command prints the return value of the end_with? method (true) to the console.
+puts female_vocalist.end_with?("andy")
+
+# The include? method is called on the male_vocalist variable, which stores the string object "Boyz 2 Men".
+# The include? method returns true if the data in the male_vocalist variable includes the argument passed in.
+# In this example, the return value is true because "Boyz 2 Men" does include "2".
+# The puts command prints the return value of the include? method (true) to the console.
+puts male_vocalist.include?("2")
 
 # SECTION 3: Calling methods on variables assigned to integers.
 # Declare 2 variables assigned to integer objects.
