@@ -10,19 +10,29 @@
 
 
 "Hello World".include?("Hello")
-
+puts 'The include method is called on the string object "Hello World"'
+puts 'An argument is passed as the method is asking if the string "Hello World" includes the string "Hello"'
+puts 'The return value is true'
 
 "Hello World".end_with?("Hello")
-
+puts 'The end with method is called on the string object "Hello World"'
+puts 'An arugument is passed as the method is asking if the string "Hello World" ends with "Hello"'
+puts 'The return value is false'
 
 "Hello World".end_with?("rld")
-
+puts 'The end with method is called on the string object "Hello World"'
+puts 'An argument is passed as the method is asking if the string "Hello World" ends with "rld"'
+puts 'The return value is true'
 
 12.even?
-
+puts 'The even method is called on the integer 12'
+puts 'An argument is passed as the method is asking if the integer is an even number'
+puts 'The return value is true'
 
 18.next
-
+puts 'The next method is called on the integer 18'
+puts 'No argument is passed; this function returns the next integer that succeeds an integer value'
+puts 'The return value is 19'
 
 
 # SECTION 2: Calling methods on variables assigned to strings.
