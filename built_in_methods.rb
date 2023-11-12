@@ -69,7 +69,20 @@ puts male_vocalist.include?("2")
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+sister_mobile = 6305743399
+mom_mobile = 6309906677
 
+# The to_f method is called on the sister_mobile variable, which stores the integer object 6305743399.
+# The to_f method converts an integer to a float.
+# In this example, the return value is 6305743399.0 as a float is a number that has to contain a fractional part aka a decimal point.
+# The puts command prints the return value of to_f method (6305743399.0) to the console.
+puts sister_mobile.to_f
+
+# The to_s method is called on the mom_mobile variable, which stores the integer object 6309906677.
+# The to_s method converts an integer to a string.
+# In this example, the return value is "6309906677" as a string is a sequence of one or more characters that may consist of letters, numbers, or symbols.
+# The puts command prints the return value of to_s method ("6309906677") to the console.
+puts mom_mobile.to_s
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
