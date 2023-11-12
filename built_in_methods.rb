@@ -89,3 +89,18 @@ puts mom_mobile.to_s
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+paris_vacation_attendees = ["Odell" , "Erin" , "Zahrya" , "Olivia" , "Acquira"]
+paris_flight_costs = [1200.76 , 800.75 , 500.99 , 234.54 , 689.05]
+
+# The fetch method is called on the paris_vacation_attendees variable, which stores the strings "Odell" , "Erin" , "Zahrya" , "Olivia" , "Acquira".
+# The fetch method returns the element at the argument index position.
+# In this example, the argument index position is 2. The return value is "Zahrya" as that is the string in idex position 2.
+# The puts command prints the return value of the fetch method ("Zahrya") to the console.
+puts paris_vacation_attendees.fetch(2)
+
+# The reverse method is called on the paris_flight_costs variable, which stores the floats 1200.76 , 800.75 , 500.99 , 234.54 , 689.05.
+# The reverse method returns a new array containing the elements in the original array in reverse order.
+# In this example, the return value is 689.05, 234.54, 500.99, 800.75, 1200.76 as it is in reverse order of the original array.
+# The puts command prints return value of the reverse method (689.05, 234.54, 500.99, 800.75, 1200.76) to the console.
+puts paris_flight_costs.reverse
