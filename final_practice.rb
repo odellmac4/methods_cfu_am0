@@ -52,9 +52,21 @@ puts greet_person("Robyn", "Caresha", "Combs")
 # 4: Write a method named square that takes in one integer, and returns the square of that integer.
 # Bonus: Print a sentence that interpolates the return value of your square method.
 
+def square(num)
+    num * num
+end
+
+total1 = square(9)
+total2 = square(7)
+
+puts total1
+puts total2
+
 # What is the return value of your method?
 # How many arguments did you pass your method?
+# One argument is passed in this method
 # What data type was your argument(s)?
+# Integer is the data type for the argument in the example above
 
 
 # 5: Write a method named check_stock that satisfies the following interaction pattern:
