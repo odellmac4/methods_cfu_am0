@@ -62,7 +62,8 @@ total2 = square(7)
 puts total1
 puts total2
 
-# What is the return value of your method?
+# What is the return value of your method? 
+# 81 for `puts total1` and 49 for `puts total2`
 # How many arguments did you pass your method?
 # One argument is passed in this method
 # What data type was your argument(s)?
@@ -72,14 +73,26 @@ puts total2
 # 5: Write a method named check_stock that satisfies the following interaction pattern:
 # Hint: You will only write one check_stock method that checks the quantity and then prints the corresponding statement.
 
-# check_stock(4, "Coffee");
-# # => "Coffee is stocked"
+def check_stock(count , item)
+    if count >= 4
+        puts "#{item} is stocked"
+    elsif count <= 3 && count >= 1
+        puts "#{item} - running LOW"
+    elsif count == 0
+        puts "#{item} - Out of stock!"
+    end
+end
 
-# check_stock(3, "Tortillas");
-# # => "Tortillas - running LOW"
+    puts check_stock(3, "Orange Chicken")
 
-# check_stock(0, "Cheese");
-# # => "Cheese - OUT of stock!"
+check_stock(4, "Coffee");
+# => "Coffee is stocked"
 
-# check_stock(1, "Salsa");
-# # => "Salsa - running LOW"
+check_stock(3, "Tortillas");
+# => "Tortillas - running LOW"
+
+check_stock(0, "Cheese");
+# => "Cheese - OUT of stock!"
+
+check_stock(1, "Salsa");
+# => "Salsa - running LOW"
